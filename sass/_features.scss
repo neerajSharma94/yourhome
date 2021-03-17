@@ -1,0 +1,36 @@
+.features{
+    grid-column: center-start/ center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    margin: 15rem 0;
+
+    .feature{
+        background-color: $color-grey-light-3;
+        padding: 2rem;
+        box-shadow: -3px -3px 5px rgba($color-grey-light-1, .9), 3px 3px 15px rgba($color-secondary, .5);
+        border: 15px;
+        display: flex;
+
+        &-icon{
+            color: $color-secondary;
+            margin-top: 1rem;
+            font-size: 4rem;
+            padding-top: 2rem;
+            padding-left: 2rem;
+        }
+        &-content{
+            padding: 4rem 1rem;
+            h4{
+                color: $color-primary-dark;
+                margin-bottom: 3rem;
+                text-transform: capitalize;
+            }
+            p{
+                font-size: 1.7rem;
+                color: $color-grey-dark-1;
+            }
+        }
+    }
+
+}

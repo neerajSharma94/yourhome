@@ -1,0 +1,89 @@
+.homes{
+    grid-column: center-start/center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin-top: 10em;
+    padding: 7rem;
+    grid-gap: 7rem;
+    
+    
+    
+    .home{
+        display: grid;
+        grid-template-columns: repeat(auto-fil, minmax(min-content, 1fr));
+        background-color: $color-grey-light-1;
+        position: relative;
+        box-shadow: 0 2rem 3rem rgba($color-secondary, .3);
+
+    
+       
+        &-img{
+            width: 100%;
+        }
+        &-heading{
+            padding: 1.4rem 2rem;
+            background-color: $color-secondary;
+            color: $color-grey-light-1;
+            font-size: 1.5rem;
+            text-align: center;
+            text-transform: capitalize;
+            width: 80%;
+            margin: 0 auto;
+            transform: translateY(-2rem);
+
+        }
+        &-info{
+            margin-top: 2rem;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+            
+            
+        }
+        &-data{
+           
+            display: flex;
+            align-items: center;
+
+            i{
+                margin-left: 2rem;
+                font-size: 2rem;
+                color: $color-primary;
+            }
+            p{
+                margin-left: 1rem;
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: $color-grey-dark-2;
+                text-transform: uppercase;
+
+            }
+
+        }
+        &-btn{
+            padding: 2rem 2.5rem;
+            margin-top: 3rem;
+            text-transform: uppercase;
+            color: $color-grey-light-1;
+            background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+            border: .2rem solid transparent ;
+            letter-spacing: .1rem;
+            font-family: $font-display;
+            font-weight: 400;
+            transition: all .5s ease;
+
+            &:hover{
+                border: .2rem solid $color-primary;
+                color: $color-primary;
+                background-image: none;
+            }
+        }
+
+    }
+
+       
+     
+    
+   
+}

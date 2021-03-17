@@ -1,0 +1,105 @@
+// .realtors{
+//     background-color: $color-secondary;
+//     grid-column: col-start 7/ main-end;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     @media only screen and (max-width: $bp-medium){
+//       grid-column: 1/-1;
+//     }
+
+//     h3{
+//         margin-bottom: 4rem;
+//     }
+//     &-container{
+//         text-align: center;
+//     }
+
+//     &-img{
+//         width: 7rem;
+//         height: 7rem;
+//         border-radius: 50%;
+//         margin-right: 2rem;
+//     }
+
+//     &-data{
+//         display: flex;
+//         margin-top: 3rem;
+//         align-content: center;
+        
+//     }
+//     &-text{
+//         text-align: start;
+//         color: $color-grey-light-1;
+//         text-transform: capitalize;
+//     }
+
+
+// }
+
+
+.realtors{
+    grid-column: col-start 7/ main-end;
+    background-color: $color-secondary;
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    
+    @media only screen and (max-width: $bp-medium){
+        grid-column: 1/ -1;
+        
+        
+    }
+
+
+    &-container{
+        
+        @media only screen and (max-width: $bp-medium){
+           display: grid;
+           grid-template-columns: repeat(3, minmax(min-content, max-content));
+           grid-column-gap: 5rem;
+            margin-bottom: 3rem;
+           
+        }
+        @media only screen and (max-width: $bp-small){
+            grid-template-columns: minmax(min-content, max-content);
+            
+        }
+
+
+
+    }
+
+    h3{
+        margin-bottom: 5rem;
+        @media only screen and (max-width: $bp-medium){
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+
+    &-img{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+    }
+    &-data{
+        display: flex;
+        margin-top: 3rem;
+        align-items: center;
+        text-align: start;
+        text-transform: capitalize;
+        color: $color-grey-light-1;
+
+              
+        p{
+            font-size: 1.2rem;
+        }
+        
+    }
+
+}
